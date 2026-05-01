@@ -1,0 +1,368 @@
+[
+  {
+    "Service ID": "SVC-001",
+    "Service Name (EN)": "National ID Renewal",
+    "Service Name (AR)": "تجديد بطاقة الهوية الوطنية",
+    "Category": "Identity Documents",
+    "Description (EN)": "Renew your National ID card. Renewal can begin up to 6 months before expiry. New ID is valid for 10 years.",
+    "Description (AR)": "تجديد بطاقة الهوية الوطنية. يمكن بدء التجديد قبل ٦ أشهر من انتهاء الصلاحية. البطاقة الجديدة صالحة لمدة ١٠ سنوات.",
+    "Required Documents (EN)": [
+      "Current National ID",
+      "Recent photo (4×6 cm, white background)"
+    ],
+    "Required Documents (AR)": [
+      "بطاقة الهوية الحالية",
+      "صورة شخصية حديثة (٤×٦ سم، خلفية بيضاء)"
+    ],
+    "Eligibility (EN)": "Saudi nationals 15 years and older",
+    "Processing Time": "10-15 minutes (in person), same-day delivery",
+    "Standard Fee": 100.0,
+    "Express Fee": null,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": "Up to 6 months before expiry",
+    "Issuing Authority (EN)": "Ministry of Interior — Civil Affairs",
+    "Issuing Authority (AR)": "وزارة الداخلية - الأحوال المدنية",
+    "Notes (EN)": "Photo can be re-used if recent. ID delivered same-day at most Civil Affairs offices."
+  },
+  {
+    "Service ID": "SVC-002",
+    "Service Name (EN)": "Iqama Renewal",
+    "Service Name (AR)": "تجديد الإقامة",
+    "Category": "Identity Documents",
+    "Description (EN)": "Annual renewal of resident's Iqama. Sponsor must initiate.",
+    "Description (AR)": "التجديد السنوي للإقامة. يبدأ الكفيل عملية التجديد.",
+    "Required Documents (EN)": [
+      "Current Iqama",
+      "Sponsor's National ID",
+      "Health insurance certificate",
+      "Renewal fee receipt"
+    ],
+    "Required Documents (AR)": [
+      "الإقامة الحالية",
+      "هوية الكفيل",
+      "شهادة التأمين الصحي",
+      "إيصال رسوم التجديد"
+    ],
+    "Eligibility (EN)": "Residents (Iqama holders)",
+    "Processing Time": "Same business day if all documents complete",
+    "Standard Fee": 650.0,
+    "Express Fee": null,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": "Up to 3 months before expiry",
+    "Issuing Authority (EN)": "Ministry of Interior — General Directorate of Passports (Jawazat)",
+    "Issuing Authority (AR)": "وزارة الداخلية - الإدارة العامة للجوازات",
+    "Notes (EN)": "Late renewal incurs SAR 500/month penalty. Renewal possible up to 90 days before expiry."
+  },
+  {
+    "Service ID": "SVC-003",
+    "Service Name (EN)": "Driver's License Renewal",
+    "Service Name (AR)": "تجديد رخصة القيادة",
+    "Category": "Identity Documents",
+    "Description (EN)": "Renew Saudi driver's license. Eye test required for renewals after 5 years.",
+    "Description (AR)": "تجديد رخصة القيادة السعودية. مطلوب فحص نظر للتجديد بعد ٥ سنوات.",
+    "Required Documents (EN)": [
+      "Current driver's license",
+      "Eye test result",
+      "Recent photo"
+    ],
+    "Required Documents (AR)": [
+      "الرخصة الحالية",
+      "نتيجة فحص النظر",
+      "صورة حديثة"
+    ],
+    "Eligibility (EN)": "Holders of valid Saudi driver's license",
+    "Processing Time": "30 minutes (in person)",
+    "Standard Fee": 200.0,
+    "Express Fee": null,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": "Up to 6 months before expiry",
+    "Issuing Authority (EN)": "Ministry of Interior — General Directorate of Traffic (Muroor)",
+    "Issuing Authority (AR)": "وزارة الداخلية - الإدارة العامة للمرور",
+    "Notes (EN)": "Renewable for 5 years (private) or 10 years (with re-test). Late renewal incurs fine."
+  },
+  {
+    "Service ID": "SVC-004",
+    "Service Name (EN)": "Vehicle Registration Renewal (Istimara)",
+    "Service Name (AR)": "تجديد تسجيل المركبة (الاستمارة)",
+    "Category": "Vehicles",
+    "Description (EN)": "Annual renewal of vehicle registration. Periodic inspection and insurance must be valid.",
+    "Description (AR)": "التجديد السنوي لتسجيل المركبة. يجب أن يكون الفحص الدوري والتأمين سارٍ.",
+    "Required Documents (EN)": [
+      "Current Istimara",
+      "Valid insurance certificate",
+      "Periodic inspection certificate (if vehicle 3+ years old)"
+    ],
+    "Required Documents (AR)": [
+      "الاستمارة الحالية",
+      "شهادة تأمين سارية",
+      "شهادة الفحص الدوري (للمركبات أكثر من ٣ سنوات)"
+    ],
+    "Eligibility (EN)": "Registered vehicle owners",
+    "Processing Time": "5 minutes (online), instant",
+    "Standard Fee": 100.0,
+    "Express Fee": null,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": "Up to 1 month before expiry",
+    "Issuing Authority (EN)": "Ministry of Interior — General Directorate of Traffic (Muroor)",
+    "Issuing Authority (AR)": "وزارة الداخلية - الإدارة العامة للمرور",
+    "Notes (EN)": "Late renewal: SAR 100 fine + cannot drive until renewed."
+  },
+  {
+    "Service ID": "SVC-005",
+    "Service Name (EN)": "Passport Renewal",
+    "Service Name (AR)": "تجديد جواز السفر",
+    "Category": "Travel",
+    "Description (EN)": "Renew Saudi passport. New passport valid for 10 years (adults) or 5 years (under 15).",
+    "Description (AR)": "تجديد جواز السفر السعودي. الجواز الجديد صالح لمدة ١٠ سنوات (للبالغين) أو ٥ سنوات (للأطفال).",
+    "Required Documents (EN)": [
+      "Current passport",
+      "National ID",
+      "Recent biometric photo"
+    ],
+    "Required Documents (AR)": [
+      "الجواز الحالي",
+      "بطاقة الهوية",
+      "صورة بيومترية حديثة"
+    ],
+    "Eligibility (EN)": "Saudi nationals",
+    "Processing Time": "Same business day",
+    "Standard Fee": 300.0,
+    "Express Fee": 600.0,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": "Up to 12 months before expiry",
+    "Issuing Authority (EN)": "Ministry of Interior — General Directorate of Passports (Jawazat)",
+    "Issuing Authority (AR)": "وزارة الداخلية - الإدارة العامة للجوازات",
+    "Notes (EN)": "Express service delivers passport within 24 hours."
+  },
+  {
+    "Service ID": "SVC-006",
+    "Service Name (EN)": "Exit/Re-entry Visa (for residents)",
+    "Service Name (AR)": "تأشيرة خروج وعودة (للمقيمين)",
+    "Category": "Travel",
+    "Description (EN)": "Issue a single or multi-entry exit/re-entry visa for an Iqama holder.",
+    "Description (AR)": "إصدار تأشيرة خروج وعودة (مفردة أو متعددة) لحامل الإقامة.",
+    "Required Documents (EN)": [
+      "Valid Iqama",
+      "Sponsor approval (Absher)",
+      "Travel destination"
+    ],
+    "Required Documents (AR)": [
+      "إقامة سارية",
+      "موافقة الكفيل (أبشر)",
+      "وجهة السفر"
+    ],
+    "Eligibility (EN)": "Residents (Iqama holders) with sponsor approval",
+    "Processing Time": "Instant (online)",
+    "Standard Fee": 200.0,
+    "Express Fee": null,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": "Issued on demand",
+    "Issuing Authority (EN)": "Ministry of Interior — General Directorate of Passports (Jawazat)",
+    "Issuing Authority (AR)": "وزارة الداخلية - الإدارة العامة للجوازات",
+    "Notes (EN)": "Single-entry SAR 200, multi-entry SAR 500. Validity: 90 days."
+  },
+  {
+    "Service ID": "SVC-007",
+    "Service Name (EN)": "Pay Traffic Violation",
+    "Service Name (AR)": "دفع المخالفة المرورية",
+    "Category": "Vehicles",
+    "Description (EN)": "Pay outstanding traffic violations via SADAD. Pay within 30 days for 25% discount.",
+    "Description (AR)": "دفع المخالفات المرورية المستحقة عبر سداد. الدفع خلال ٣٠ يوماً يستحق خصم ٢٥٪.",
+    "Required Documents (EN)": [
+      "National ID / Iqama",
+      "Plate number"
+    ],
+    "Required Documents (AR)": [
+      "الهوية / الإقامة",
+      "رقم اللوحة"
+    ],
+    "Eligibility (EN)": "Anyone with outstanding violations on file",
+    "Processing Time": "Instant",
+    "Standard Fee": 0.0,
+    "Express Fee": null,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": null,
+    "Issuing Authority (EN)": "Ministry of Interior — General Directorate of Traffic (Muroor)",
+    "Issuing Authority (AR)": "وزارة الداخلية - الإدارة العامة للمرور",
+    "Notes (EN)": "Discount only applies if paid within 30 days of issue. Disputed violations should be filed before paying."
+  },
+  {
+    "Service ID": "SVC-008",
+    "Service Name (EN)": "Add Newborn to Family Record",
+    "Service Name (AR)": "إضافة مولود جديد إلى السجل الأسري",
+    "Category": "Family",
+    "Description (EN)": "Register a newborn under the family record (ID issued at age 15).",
+    "Description (AR)": "تسجيل مولود جديد تحت السجل الأسري (تصدر الهوية عند ١٥ سنة).",
+    "Required Documents (EN)": [
+      "Birth notification from hospital",
+      "Father's National ID",
+      "Mother's National ID",
+      "Marriage certificate"
+    ],
+    "Required Documents (AR)": [
+      "إشعار الولادة من المستشفى",
+      "هوية الأب",
+      "هوية الأم",
+      "صك الزواج"
+    ],
+    "Eligibility (EN)": "Saudi parents within 30 days of birth",
+    "Processing Time": "10-20 minutes",
+    "Standard Fee": 0.0,
+    "Express Fee": null,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": null,
+    "Issuing Authority (EN)": "Ministry of Interior — Civil Affairs",
+    "Issuing Authority (AR)": "وزارة الداخلية - الأحوال المدنية",
+    "Notes (EN)": "Late registration after 30 days incurs SAR 1000 fine."
+  },
+  {
+    "Service ID": "SVC-009",
+    "Service Name (EN)": "Vehicle Ownership Transfer",
+    "Service Name (AR)": "نقل ملكية المركبة",
+    "Category": "Vehicles",
+    "Description (EN)": "Transfer vehicle ownership from current owner to a buyer.",
+    "Description (AR)": "نقل ملكية المركبة من المالك الحالي إلى المشتري.",
+    "Required Documents (EN)": [
+      "Both parties' National IDs",
+      "Vehicle Istimara",
+      "Sale contract",
+      "Insurance under new owner"
+    ],
+    "Required Documents (AR)": [
+      "هويتا الطرفين",
+      "استمارة المركبة",
+      "عقد البيع",
+      "تأمين باسم المالك الجديد"
+    ],
+    "Eligibility (EN)": "Both seller and buyer present (or POA)",
+    "Processing Time": "30 minutes",
+    "Standard Fee": 150.0,
+    "Express Fee": null,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": null,
+    "Issuing Authority (EN)": "Ministry of Interior — General Directorate of Traffic (Muroor)",
+    "Issuing Authority (AR)": "وزارة الداخلية - الإدارة العامة للمرور",
+    "Notes (EN)": "Vehicle must have no outstanding violations. Online transfer available via Absher."
+  },
+  {
+    "Service ID": "SVC-010",
+    "Service Name (EN)": "Family Book Extract",
+    "Service Name (AR)": "مستخرج من دفتر العائلة",
+    "Category": "Family",
+    "Description (EN)": "Issue an official copy or extract from the family book.",
+    "Description (AR)": "إصدار نسخة أو مستخرج رسمي من دفتر العائلة.",
+    "Required Documents (EN)": [
+      "Family book",
+      "Head of family's National ID"
+    ],
+    "Required Documents (AR)": [
+      "دفتر العائلة",
+      "هوية رب الأسرة"
+    ],
+    "Eligibility (EN)": "Head of household or authorized family member",
+    "Processing Time": "Instant (digital), 10 minutes (printed)",
+    "Standard Fee": 50.0,
+    "Express Fee": null,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": null,
+    "Issuing Authority (EN)": "Ministry of Interior — Civil Affairs",
+    "Issuing Authority (AR)": "وزارة الداخلية - الأحوال المدنية",
+    "Notes (EN)": "Digital copy delivered to Absher account."
+  },
+  {
+    "Service ID": "SVC-011",
+    "Service Name (EN)": "Periodic Vehicle Inspection (Fahas)",
+    "Service Name (AR)": "الفحص الدوري للمركبة (فحص)",
+    "Category": "Vehicles",
+    "Description (EN)": "Mandatory periodic inspection for vehicles 3+ years old.",
+    "Description (AR)": "الفحص الدوري الإلزامي للمركبات الأكبر من ٣ سنوات.",
+    "Required Documents (EN)": [
+      "Vehicle Istimara",
+      "Owner's ID"
+    ],
+    "Required Documents (AR)": [
+      "استمارة المركبة",
+      "هوية المالك"
+    ],
+    "Eligibility (EN)": "Vehicle owners (vehicles 3+ years old)",
+    "Processing Time": "20-30 minutes (at inspection center)",
+    "Standard Fee": 65.0,
+    "Express Fee": null,
+    "Available Online": false,
+    "Available In Person": true,
+    "Renewal Window": "Annual (or biennial for newer vehicles)",
+    "Issuing Authority (EN)": "Authorized Vehicle Inspection Centers",
+    "Issuing Authority (AR)": "مراكز الفحص الدوري المعتمدة",
+    "Notes (EN)": "Required to renew vehicle registration."
+  },
+  {
+    "Service ID": "SVC-012",
+    "Service Name (EN)": "Replace Lost National ID",
+    "Service Name (AR)": "بدل فاقد لبطاقة الهوية",
+    "Category": "Identity Documents",
+    "Description (EN)": "Issue a replacement for a lost or damaged National ID.",
+    "Description (AR)": "إصدار بدل فاقد أو تالف لبطاقة الهوية الوطنية.",
+    "Required Documents (EN)": [
+      "Police report (for lost ID)",
+      "Recent photo",
+      "Application form"
+    ],
+    "Required Documents (AR)": [
+      "محضر شرطة (للهوية المفقودة)",
+      "صورة حديثة",
+      "نموذج الطلب"
+    ],
+    "Eligibility (EN)": "Saudi nationals",
+    "Processing Time": "1-3 business days",
+    "Standard Fee": 100.0,
+    "Express Fee": null,
+    "Available Online": false,
+    "Available In Person": true,
+    "Renewal Window": null,
+    "Issuing Authority (EN)": "Ministry of Interior — Civil Affairs",
+    "Issuing Authority (AR)": "وزارة الداخلية - الأحوال المدنية",
+    "Notes (EN)": "First replacement SAR 100, repeated replacements SAR 200."
+  },
+  {
+    "Service ID": "SVC-013",
+    "Service Name (EN)": "Issue Commercial Registration (CR)",
+    "Service Name (AR)": "إصدار السجل التجاري",
+    "Category": "Business",
+    "Description (EN)": "Register a new commercial entity with the Ministry of Commerce. Required to legally operate a business in Saudi Arabia. Process includes trade name reservation, articles of association approval, and CR issuance.",
+    "Description (AR)": "تسجيل منشأة تجارية جديدة لدى وزارة التجارة. مطلوب لمزاولة النشاط التجاري في المملكة العربية السعودية. تشمل العملية حجز الاسم التجاري، اعتماد عقد التأسيس، وإصدار السجل التجاري.",
+    "Required Documents (EN)": [
+      "National ID of all owners",
+      "Proposed trade name (3 alternatives)",
+      "Articles of association",
+      "Lease contract or proof of business address",
+      "Capital deposit slip (if applicable)"
+    ],
+    "Required Documents (AR)": [
+      "بطاقة الهوية الوطنية لجميع الملاك",
+      "الاسم التجاري المقترح (٣ بدائل)",
+      "عقد التأسيس",
+      "عقد الإيجار أو إثبات العنوان التجاري",
+      "إيصال إيداع رأس المال (إن وُجد)"
+    ],
+    "Eligibility (EN)": "Saudi nationals 18+, or partnerships with valid foreign investment licenses",
+    "Processing Time": "5-10 business days (standard), 1-3 days (express)",
+    "Standard Fee": 1200.0,
+    "Express Fee": 2000.0,
+    "Available Online": true,
+    "Available In Person": true,
+    "Renewal Window": "Annual renewal required",
+    "Issuing Authority (EN)": "Ministry of Commerce",
+    "Issuing Authority (AR)": "وزارة التجارة",
+    "Notes (EN)": "Most CR types now issued online via the Ministry of Commerce portal. Annual renewal SAR 200. Sole proprietorships and LLCs follow different requirements."
+  }
+]

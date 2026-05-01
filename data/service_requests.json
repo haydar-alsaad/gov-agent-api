@@ -1,0 +1,144 @@
+[
+  {
+    "Request ID": "REQ-2026-0001",
+    "Citizen ID": "CIT-009",
+    "Service ID": "SVC-013",
+    "Service Name (EN)": "Issue Commercial Registration",
+    "Service Name (AR)": "إصدار السجل التجاري",
+    "Status": "In Progress",
+    "Current Step": "Step 3 of 5",
+    "Steps Completed (EN)": [
+      "Submit application (Apr 15)",
+      "Pay initial fee SAR 1,200 (Apr 15)",
+      "Trade name 'Al-Zamil Modern Bakery' approved (Apr 25)"
+    ],
+    "Steps Completed (AR)": [
+      "تقديم الطلب (١٥ أبريل)",
+      "دفع الرسوم الأولية ١,٢٠٠ ريال (١٥ أبريل)",
+      "اعتماد الاسم التجاري 'مخبزة الزامل الحديثة' (٢٥ أبريل)"
+    ],
+    "Steps Remaining (EN)": [
+      "Submit signed articles of association",
+      "Final approval and CR issuance (appointment May 10)"
+    ],
+    "Steps Remaining (AR)": [
+      "رفع عقد التأسيس الموقع",
+      "الاعتماد النهائي وإصدار السجل التجاري (موعد ١٠ مايو)"
+    ],
+    "Started Date": "2026-04-15",
+    "Estimated Completion": "2026-05-10",
+    "Related Appointment ID": "APT-2026-0005",
+    "Reference Data": {
+      "Trade Name (EN)": "Al-Zamil Modern Bakery",
+      "Trade Name (AR)": "مخبزة الزامل الحديثة",
+      "Business Type": "Sole Proprietorship",
+      "Capital": 100000.0,
+      "Activity (EN)": "Bakery and pastry retail",
+      "Activity (AR)": "بيع المخبوزات والمعجنات بالتجزئة"
+    },
+    "Notes": "Headline business-formation demo persona."
+  },
+  {
+    "Request ID": "REQ-2026-0002",
+    "Citizen ID": "CIT-008",
+    "Service ID": "SVC-002",
+    "Service Name (EN)": "Iqama Renewal",
+    "Service Name (AR)": "تجديد الإقامة",
+    "Status": "In Progress",
+    "Current Step": "Step 3 of 4",
+    "Steps Completed (EN)": [
+      "Sponsor approval received (Apr 20)",
+      "Health insurance verified (Apr 21)",
+      "Renewal fee SAR 650 paid (Apr 22)"
+    ],
+    "Steps Completed (AR)": [
+      "موافقة الكفيل (٢٠ أبريل)",
+      "التأمين الصحي معتمد (٢١ أبريل)",
+      "رسوم التجديد ٦٥٠ ريال مدفوعة (٢٢ أبريل)"
+    ],
+    "Steps Remaining (EN)": [
+      "Final stamp at Jawazat (appointment May 15)"
+    ],
+    "Steps Remaining (AR)": [
+      "الختم النهائي في الجوازات (موعد ١٥ مايو)"
+    ],
+    "Started Date": "2026-04-20",
+    "Estimated Completion": "2026-05-15",
+    "Related Appointment ID": "APT-2026-0004",
+    "Reference Data": {
+      "Sponsor (EN)": "Tatweer Building Co.",
+      "Sponsor (AR)": "شركة تطوير للبناء",
+      "Spouse Iqama (also renewing)": "DEP-014"
+    },
+    "Notes": "Resident workflow demo. Spouse's Iqama renews together."
+  },
+  {
+    "Request ID": "REQ-2026-0003",
+    "Citizen ID": "CIT-006",
+    "Service ID": "SVC-004",
+    "Service Name (EN)": "Vehicle Registration Renewal",
+    "Service Name (AR)": "تجديد تسجيل المركبة",
+    "Status": "In Progress",
+    "Current Step": "Step 1 of 3",
+    "Steps Completed (EN)": [
+      "Inspection appointment booked (May 3)"
+    ],
+    "Steps Completed (AR)": [
+      "حجز موعد الفحص (٣ مايو)"
+    ],
+    "Steps Remaining (EN)": [
+      "Pass periodic inspection (May 3)",
+      "Pay renewal fee SAR 100 and confirm online"
+    ],
+    "Steps Remaining (AR)": [
+      "اجتياز الفحص الدوري (٣ مايو)",
+      "دفع رسوم التجديد ١٠٠ ريال والتأكيد إلكترونياً"
+    ],
+    "Started Date": "2026-05-01",
+    "Estimated Completion": "2026-05-03",
+    "Related Appointment ID": "APT-2026-0003",
+    "Reference Data": {
+      "Vehicle ID": "VEH-009",
+      "Plate (EN)": "YZA 7890",
+      "Current Expiry": "2026-05-09"
+    },
+    "Notes": "Time-pressured renewal — registration expires in 7 days."
+  },
+  {
+    "Request ID": "REQ-2026-0004",
+    "Citizen ID": "CIT-010",
+    "Service ID": "SVC-005",
+    "Service Name (EN)": "Passport Renewal",
+    "Service Name (AR)": "تجديد جواز السفر",
+    "Status": "Awaiting Pickup",
+    "Current Step": "Step 4 of 4",
+    "Steps Completed (EN)": [
+      "Application submitted (Apr 18)",
+      "Renewal fee SAR 300 paid (Apr 18)",
+      "New passport printed (Apr 24)",
+      "Document ready for collection (Apr 25)"
+    ],
+    "Steps Completed (AR)": [
+      "تقديم الطلب (١٨ أبريل)",
+      "رسوم التجديد ٣٠٠ ريال مدفوعة (١٨ أبريل)",
+      "طباعة الجواز الجديد (٢٤ أبريل)",
+      "الجواز جاهز للاستلام (٢٥ أبريل)"
+    ],
+    "Steps Remaining (EN)": [
+      "Pick up at Riyadh Jawazat — Olaya Branch (any business day)"
+    ],
+    "Steps Remaining (AR)": [
+      "الاستلام من جوازات الرياض - فرع العليا (أي يوم عمل)"
+    ],
+    "Started Date": "2026-04-18",
+    "Estimated Completion": null,
+    "Related Appointment ID": null,
+    "Reference Data": {
+      "New Document ID": "DOC-034",
+      "New Passport Number": "S99001122",
+      "Pickup Location": "Riyadh Jawazat — Olaya Branch",
+      "Days Awaiting Pickup": 7
+    },
+    "Notes": "Walk-in collection — no appointment needed. Document collection demo persona."
+  }
+]

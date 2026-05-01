@@ -1,0 +1,132 @@
+[
+  {
+    "Appointment ID": "APT-2026-0001",
+    "Citizen ID": "CIT-001",
+    "Service ID": "SVC-005",
+    "Service (EN)": "Passport Renewal",
+    "Service (AR)": "تجديد جواز السفر",
+    "Office ID": "OFF-001",
+    "Office (EN)": "Riyadh Jawazat — Olaya Branch",
+    "Office (AR)": "جوازات الرياض - فرع العليا",
+    "Date": "2026-05-12",
+    "Time": "10:00",
+    "Status": "Confirmed",
+    "Confirmation Number": "CONF-485729",
+    "Booking Channel": "Mobile App",
+    "Required Documents (EN)": [
+      "Current Passport",
+      "National ID",
+      "Recent Photo"
+    ],
+    "Required Documents (AR)": [
+      "جواز السفر الحالي",
+      "بطاقة الهوية",
+      "صورة حديثة"
+    ],
+    "Notes": "Renewing 5 years before expiry to align with planned travel."
+  },
+  {
+    "Appointment ID": "APT-2026-0002",
+    "Citizen ID": "CIT-002",
+    "Service ID": "SVC-010",
+    "Service (EN)": "Family Book Extract",
+    "Service (AR)": "مستخرج من دفتر العائلة",
+    "Office ID": "OFF-002",
+    "Office (EN)": "Riyadh Civil Affairs — Malaz",
+    "Office (AR)": "الأحوال المدنية بالرياض - الملز",
+    "Date": "2026-05-08",
+    "Time": "11:30",
+    "Status": "Confirmed",
+    "Confirmation Number": "CONF-485800",
+    "Booking Channel": "Mobile App",
+    "Required Documents (EN)": [
+      "Family book",
+      "Head of family's National ID"
+    ],
+    "Required Documents (AR)": [
+      "دفتر العائلة",
+      "هوية رب الأسرة"
+    ],
+    "Notes": "For school enrollment paperwork."
+  },
+  {
+    "Appointment ID": "APT-2026-0003",
+    "Citizen ID": "CIT-006",
+    "Service ID": "SVC-011",
+    "Service (EN)": "Periodic Vehicle Inspection",
+    "Service (AR)": "الفحص الدوري للمركبة",
+    "Office ID": "OFF-011",
+    "Office (EN)": "Riyadh Vehicle Inspection — North",
+    "Office (AR)": "فحص المركبات بالرياض - شمال",
+    "Date": "2026-05-03",
+    "Time": "10:00",
+    "Status": "Confirmed",
+    "Confirmation Number": "CONF-FAH-301",
+    "Booking Channel": "Mobile App",
+    "Required Documents (EN)": [
+      "Vehicle Istimara",
+      "Owner's National ID"
+    ],
+    "Required Documents (AR)": [
+      "استمارة المركبة",
+      "بطاقة الهوية الوطنية"
+    ],
+    "Notes": "Required before renewing the registration that expires May 9."
+  },
+  {
+    "Appointment ID": "APT-2026-0004",
+    "Citizen ID": "CIT-008",
+    "Service ID": "SVC-002",
+    "Service (EN)": "Iqama Renewal",
+    "Service (AR)": "تجديد الإقامة",
+    "Office ID": "OFF-001",
+    "Office (EN)": "Riyadh Jawazat — Olaya Branch",
+    "Office (AR)": "جوازات الرياض - فرع العليا",
+    "Date": "2026-05-15",
+    "Time": "09:00",
+    "Status": "Confirmed",
+    "Confirmation Number": "CONF-IQM-401",
+    "Booking Channel": "Mobile App",
+    "Required Documents (EN)": [
+      "Current Iqama",
+      "Sponsor's National ID copy",
+      "Health insurance certificate",
+      "Renewal fee receipt"
+    ],
+    "Required Documents (AR)": [
+      "الإقامة الحالية",
+      "هوية الكفيل",
+      "شهادة التأمين الصحي",
+      "إيصال رسوم التجديد"
+    ],
+    "Notes": "Renewal in progress (REQ-2026-0002). Sponsor approved Apr 20."
+  },
+  {
+    "Appointment ID": "APT-2026-0005",
+    "Citizen ID": "CIT-009",
+    "Service ID": "SVC-013",
+    "Service (EN)": "Issue Commercial Registration (CR)",
+    "Service (AR)": "إصدار السجل التجاري",
+    "Office ID": "OFF-013",
+    "Office (EN)": "Ministry of Commerce — Riyadh HQ",
+    "Office (AR)": "وزارة التجارة - الرياض (الإدارة العامة)",
+    "Date": "2026-05-10",
+    "Time": "13:00",
+    "Status": "Confirmed",
+    "Confirmation Number": "CONF-MOC-501",
+    "Booking Channel": "Mobile App",
+    "Required Documents (EN)": [
+      "National ID",
+      "Trade name approval letter",
+      "Articles of association (signed)",
+      "Lease contract for business address"
+    ],
+    "Required Documents (AR)": [
+      "بطاقة الهوية الوطنية",
+      "خطاب اعتماد الاسم التجاري",
+      "عقد التأسيس (موقع)",
+      "عقد إيجار العنوان التجاري"
+    ],
+    "Notes": "Final step in CR issuance. After this, Al-Zamil Modern Bakery is officially registered."
+  }
+]
