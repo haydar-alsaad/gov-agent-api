@@ -18,7 +18,8 @@ combined functionality for a WhatsApp-based government services agent demo.
 """
 import json
 import os
-from datetime import datetime, timedelta
+import re
+from datetime import date, datetime, timedelta
 from typing import Optional
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
@@ -104,6 +105,139 @@ def find_vehicle(vehicle_id):
 
 def find_fee(service_id):
     return next((f for f in fees_catalog if f["Service ID"] == service_id), None)
+
+
+# ============================================================
+# Temporal recompute helpers
+#
+# Several JSON files store pre-computed time-derived fields:
+#   documents.json:        Days Until Expiry, Status
+#   vehicles.json:         Days Until Registration Expiry, Registration Status,
+#                          Insurance Status, Periodic Inspection Status
+#   service_requests.json: Reference Data["Days Awaiting Pickup"]
+#
+# These were computed at data-generation time and rot as days pass. The actual
+# date strings (Expiry Date, Registration Expiry Date, Insurance Expiry, etc.)
+# are the source of truth — we recompute the derived fields on every /citizen
+# call so a citizen never sees stale "30 days remaining" when reality is 26 days.
+# ============================================================
+
+_MONTH_ABBREV = {
+    "Jan": 1, "Feb": 2, "Mar": 3, "Apr": 4, "May": 5, "Jun": 6,
+    "Jul": 7, "Aug": 8, "Sep": 9, "Oct": 10, "Nov": 11, "Dec": 12,
+}
+_STEP_DATE_PATTERN = re.compile(r"\(([A-Z][a-z]{2}) (\d{1,2})\)")
+
+
+def _parse_iso(date_str):
+    """Parse 'YYYY-MM-DD' to date. Returns None on bad input."""
+    if not date_str:
+        return None
+    try:
+        return datetime.strptime(date_str, "%Y-%m-%d").date()
+    except (ValueError, TypeError):
+        return None
+
+
+def _extract_latest_step_date(steps, fallback_year):
+    """
+    Pull the latest '(Mon DD)' date from a Steps Completed (EN) list.
+    Used to recompute 'Days Awaiting Pickup' from the most recent
+    'Document ready for collection' step rather than trusting a stale field.
+    """
+    latest = None
+    for step in steps or []:
+        for match in _STEP_DATE_PATTERN.finditer(step):
+            mon_abbrev, day_str = match.group(1), match.group(2)
+            mon_num = _MONTH_ABBREV.get(mon_abbrev)
+            if not mon_num:
+                continue
+            try:
+                d = date(fallback_year, mon_num, int(day_str))
+            except ValueError:
+                continue
+            if latest is None or d > latest:
+                latest = d
+    return latest
+
+
+def _recompute_temporal_fields(docs, vehs, active_reqs):
+    """
+    Mutates docs/vehs/active_reqs in-place to refresh time-derived fields
+    against today's date. Source of truth is each record's date strings.
+
+    Status vocabulary preserved:
+      Documents:    Active / Expiring Soon / Expired   ('Pending Pickup' is preserved as-is)
+      Registration: Active / Expiring Soon / Expired
+      Insurance:    Active / Expiring Soon / Expired
+      Inspection:   Valid / Required
+
+    Thresholds: <0 days => Expired/Required;
+                0-30 days => Expiring Soon (vehicles), 0-60 days => Expiring Soon (documents);
+                else => Active/Valid.
+    """
+    today = datetime.now().date()
+
+    for d in docs:
+        exp_date = _parse_iso(d.get("Expiry Date"))
+        if exp_date is None:
+            continue
+        days = (exp_date - today).days
+        d["Days Until Expiry"] = days
+        # 'Pending Pickup' is a workflow state, not a time state — preserve it.
+        if d.get("Status") == "Pending Pickup":
+            continue
+        if days < 0:
+            d["Status"] = "Expired"
+        elif days <= 60:
+            d["Status"] = "Expiring Soon"
+        else:
+            d["Status"] = "Active"
+
+    for v in vehs:
+        reg_date = _parse_iso(v.get("Registration Expiry Date"))
+        if reg_date is not None:
+            days = (reg_date - today).days
+            v["Days Until Registration Expiry"] = days
+            if days < 0:
+                v["Registration Status"] = "Expired"
+            elif days <= 30:
+                v["Registration Status"] = "Expiring Soon"
+            else:
+                v["Registration Status"] = "Active"
+
+        ins_date = _parse_iso(v.get("Insurance Expiry"))
+        if ins_date is not None:
+            days = (ins_date - today).days
+            if days < 0:
+                v["Insurance Status"] = "Expired"
+            elif days <= 30:
+                v["Insurance Status"] = "Expiring Soon"
+            else:
+                v["Insurance Status"] = "Active"
+
+        insp_date = _parse_iso(v.get("Periodic Inspection Expiry"))
+        if insp_date is not None:
+            days = (insp_date - today).days
+            v["Periodic Inspection Status"] = "Required" if days < 0 else "Valid"
+
+    for r in active_reqs:
+        if r.get("Status") != "Awaiting Pickup":
+            continue
+        ref = r.get("Reference Data") or {}
+        if "Days Awaiting Pickup" not in ref:
+            continue
+        # Try to find the most recent step date (e.g. "Document ready for collection (Apr 25)").
+        # Fallback: use Started Date.
+        started = _parse_iso(r.get("Started Date"))
+        fallback_year = started.year if started else today.year
+        latest_step = _extract_latest_step_date(
+            r.get("Steps Completed (EN)"), fallback_year
+        )
+        if latest_step is None:
+            latest_step = started
+        if latest_step is not None:
+            ref["Days Awaiting Pickup"] = max(0, (today - latest_step).days)
 
 
 # ============================================================
@@ -262,6 +396,11 @@ def get_citizen(
     # Active service requests (in progress / awaiting pickup)
     reqs = [r for r in service_requests if r["Citizen ID"] == cid]
     active_reqs = [r for r in reqs if r["Status"] in ("In Progress", "Awaiting Pickup", "Pending Review")]
+
+    # Refresh time-derived fields against today's date BEFORE computing urgency flags
+    # so the agent always sees current Days Until Expiry / Status values, regardless
+    # of how stale the stored JSON has become.
+    _recompute_temporal_fields(docs, vehs, active_reqs)
 
     # Document urgency flags
     expiring_docs = [d for d in docs
